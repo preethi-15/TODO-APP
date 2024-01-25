@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Datagrid="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
+             x:Class="Todo.Views.ProductlistPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Datagrid:DataGrid x:Name="productslist">
+                <Datagrid:DataGrid.Columns >
+                    <Datagrid:DataGridColumn Title="ID" PropertyName="id" />
+                    <Datagrid:DataGridColumn Title="PRODUCT" PropertyName="product" />
+                    <Datagrid:DataGridColumn Title="UNIT" PropertyName="unit"/>
+                    <Datagrid:DataGridColumn Title="QUANTITY" PropertyName="quantity"/>
+                    <Datagrid:DataGridColumn Title="PRICE" PropertyName="price"/>
+                    <Datagrid:DataGridColumn Title="AMOUNT" PropertyName="amount"/>
+                    
+                </Datagrid:DataGrid.Columns>
+                <Datagrid:DataGrid.RowsBackgroundColorPalette>
+                    <Datagrid:PaletteCollection>
+                        <Color>#F2F2F2</Color>
+                        <Color>#FFFFFF</Color>
+                    </Datagrid:PaletteCollection>
+                </Datagrid:DataGrid.RowsBackgroundColorPalette>
+
+            </Datagrid:DataGrid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

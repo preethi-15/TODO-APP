@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.ProductAddPage">
+    <ContentPage.Content>
+        <Grid Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label  Text="PRODUCT:" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" TextColor="Black" />
+            <Entry x:Name="Product" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Placeholder="Enter your product" />
+            <Label  Text="ID:" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"  TextColor="Black"/>
+            <Entry x:Name="Id" Grid.Row="1" Grid.Column="1"  VerticalOptions="Center"  Placeholder="Enter your id" />
+            <Label Text="UNIT:" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center"  TextColor="Black"/>
+            <Label x:Name="Unit" Grid.Row="2" Grid.Column="1"  VerticalOptions="Center" Text="kg"  TextColor="Black"/>
+            <Label Text="QUANTITY:" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"   TextColor="Black"/>
+            <Entry x:Name="Quantity" Grid.Row="3" Grid.Column="1"  VerticalOptions="Center"  Placeholder="Enter your quantity"  TextChanged="Ontextchanged"/>
+            <Label Text="PRICE:" Grid.Row="4" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center"  TextColor="Black"/>
+            <Entry x:Name="Price" Grid.Row="4" Grid.Column="1"  VerticalOptions="Center"  TextChanged="Ontextchanged" />
+            <Label Text="AMOUNT:" Grid.Row="5" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center"  TextColor="Black" />
+            <Label x:Name="Amount" Grid.Row="5" Grid.Column="1"  VerticalOptions="Center"   TextColor="Black" />
+            <Button Text="ADD"  Grid.Row="6" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Addclicked" BackgroundColor="LightGreen"/>
+            <Button Text="CLEAR" Grid.Row="6" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Clearclicked" BackgroundColor="LightGreen" />
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
